@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Project</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand"><h3>Live Search Report</h3></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                </ul>
+              </div>
+            <a class="navbar-brand"><h3>April 2022</h3></a>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row header align-items-center mt-2 mb-4">
+            <h2 class="text-center">Welcome to City of Calgary Report </h2>
+        </div>
+
+        <div class="row g-3  d-flex align-items-center justify-content-center">
+            <div class="col-auto">
+                <label for="dropdown1" class="col-form-label">Choose parameter: </label>
+            </div>
+
+            <div class=" col-auto">
+                <select class="form-control q " id="dropdownDataset" >
+
+                    <option value="no_value">Select a Dataset</option>
+                    <option value="Traffic_Incidents">Traffic Incidents</option>
+                    <option value="Crime_Stats">Crime Stats</option>
+                    <option value="Building_Permits">Building Permits</option>
+
+                </select>
+            </div>
+            
+            <div class=" col-auto">
+                <select class="form-control q1" id="dropdown1"  disabled >
+
+                    <option id="no_val">Select a parameter</option>
+                    <option id="parameter1" value="">One </option>
+                    <option id="parameter2" value="">Two </option>
+                    <option id="parameter3" value="">Three </option>
+                    <option id="parameter4" value="">Four </option>
+
+                </select>
+            </div>
+
+            <div class="col-auto">
+                <input type="text" class="form-control " disabled id="search-input"
+                    placeholder="Select parameter first" />
+            </div>
+        </div>
+        <div class="row" id="res">
+            <div class=" outputTable" id="results">
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA02TzAvy_i3WCC6U2sK2M09aajRRWY-GU&callback=initMap"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

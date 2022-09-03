@@ -1,0 +1,102 @@
+:root {
+  --primary-light: #8abdff;
+  --primary: #6d5dfc;
+  --primary-dark: #5b0eeb;
+  --white: #FFFFFF;
+  --greyLight-1: #E4EBF5;
+  --greyLight-2: #c8d0e7;
+  --greyLight-3: #bec8e4;
+  --greyDark: #9baacf; }
+
+  body {
+    background: var(--greyLight-1);
+  }
+
+  html {
+  background: var(--greyLight-1); }
+h5{
+  display: inline-block;
+}
+.row {
+  background: var(--greyLight-1); }
+
+.navbar {
+  background-color: var(--greyDark); }
+  .navbar a {
+    font-family: "Times New Roman", serif; }
+
+.header {
+  height: 70px;
+  background-color: var(--greyLight-1); }
+
+  .centr{
+    margin: auto;
+   
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    
+  }
+  .lft{
+    text-align: left;
+  }
+.card {
+  width: 18rem;
+  height: 200px;
+  margin: auto; }
+
+.srch {
+  display: block;
+  text-align: center; }
+  .srch form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left; }
+
+.dropdown {
+  width: 60%; }
+
+table {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+
+.outputTable {
+
+  width: 90%;
+  display: flex;
+  margin: auto;
+  background-color: var(--greyLight-1); }
+
+  .container {
+    width: 100%;
+
+  }
+  #result {
+    /* align-items: center; */
+    position: absolute;
+    cursor: pointer;
+    overflow-y: auto;
+    box-sizing: border-box;
+    z-index: 1001;
+   }
+   
+  .link-class:hover{
+    background-color:#f1f1f1;
+  }
+  #displayForm{
+    width: 60%;
+  }
+
+  .name{
+    width: 40%;
+  }
+
+  .Card{
+
+  }
+
+.field{
+  width: 35%;}
